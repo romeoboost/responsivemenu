@@ -1,0 +1,100 @@
+body
+{
+	/*background-color: #e00b0b;*/
+	margin : 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(bg.jpg);
+	background-position: center center;
+}
+header{
+	padding: 0 100px;
+	width: 100%;
+	height: 85px;
+	box-sizing: border-box;
+	background: rgba(255,255,255,.2);
+	box-shadow: 0 15px 15px rgba(0,0,0,.2);
+}
+ul
+{
+	position : relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	float: right;
+	transition: .5s;
+}
+ul li
+{
+	list-style: none;
+}
+ul li a
+{
+	position: relative;
+	display: block;
+	padding: 15px 15px;
+	margin: 20px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #262626;
+	transition: .5s;
+}
+
+ul li a:hover
+{
+	background: #262626;
+	color: #fff;
+}
+.toggle
+{
+	position: absolute;
+	display: none;
+	right: 10px;
+	top: 28px;
+	background: #f00;
+	color: #fff;
+	padding: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+@media (max-width: 992px)
+{
+	header
+	{
+		padding: 0 0;
+		background: rgba(255,255,255,.5);
+	}
+	header ul
+	{
+		width: 100%;
+		top: -4px;
+		display: none;
+	}
+	.toggle
+	{
+		display: block;
+	}
+
+	header ul.display-responsive-menu
+	{
+		display: block;
+	}
+
+	header ul li a
+	{
+		margin: 0;
+		display: block;
+		text-align: center;
+		color: #fff; 
+		background: rgba(0,0,0,.5);
+	}
+}
+
